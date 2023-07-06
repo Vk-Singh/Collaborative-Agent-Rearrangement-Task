@@ -1,0 +1,44 @@
+- Image: src/blip2_agent/images/1.jpg
+- GPT_Prompt: I have an image of a table top containing objects. Ask detailed questions
+    about the content in the image. Carefully ask me informative and short questions
+    to gather as much information as possible about the objects in the image. Answers
+    to these questions will be used to generate instructions to recreate the scene.Each
+    time ask one question only without giving an answer. Try to add variety to the
+    questions and keep the questions short.I'll reply back starting with "Ans:".Do
+    not hallucinate information. Only consider information provided by I.
+- GPT_SUB_PROMPT: "Generate Next Question. Minimize asking yes/no questions. Do not\
+    \ add 'Question' at the start of responses. \nQuestion: "
+- Blip_Prompt: Describe the image in detail. Do not skip information about any object.
+    Do not hallucinate objects in the image.
+- Summary_Prompt: Given above mentioned information, summarize the scene without losing
+    any detail. Do not hallucinate information. The summary can be upto 200 words
+    long.
+- CONVERSATION:
+  - 'BLIP_PROMPT_QUESTION: Describe the image in detail. Do not skip information about
+    any object. Do not hallucinate objects in the image.'
+  - 'BLIP_ANSWER: There is an apple, a glass of water, and a plate on the counter'
+  - 'GPT_QUESTION: What color is the apple?'
+  - 'BLIP_ANSWER: the apple is red'
+  - 'GPT_QUESTION: What type of apple is it?'
+  - 'BLIP_ANSWER: it is a red apple'
+  - 'GPT_QUESTION: Question: Is the glass of water half-full or half-empty?'
+  - 'BLIP_ANSWER: half-full'
+  - 'GPT_QUESTION: Question: What shape is the plate?'
+  - 'BLIP_ANSWER: a plate with a red apple on it and a glass of water on it'
+  - 'GPT_QUESTION: Question: What is the size of the plate?'
+  - 'BLIP_ANSWER: a plate with a red apple on it and a glass of water on it'
+  - 'GPT_QUESTION: Question: What is the shape of the glass?'
+  - 'BLIP_ANSWER: a glass with a red apple on it and a glass of water on it'
+  - 'GPT_QUESTION: Question: What is the material of the glass?'
+  - 'BLIP_ANSWER: a glass with a red apple on it and a glass of water on it'
+  - 'GPT_QUESTION: Question: Is there anything else on the table besides the apple,
+    glass of water, and plate?'
+  - 'BLIP_ANSWER: yes, a glass with a red apple on it and a glass of water on it'
+  - 'GPT_QUESTION: Question: Question: Are there any other objects on the table besides
+    the apple, glass of water, and plate?'
+  - 'BLIP_ANSWER: yes, a glass with a red apple on it and a glass of water on it'
+- SUMMARY: There is a table with several objects on it. In the center of the table,
+    there is a plate. The plate is empty except for a red apple placed on it. To the
+    right of the plate, there is a glass of water. The glass is half-full. The glass
+    is made of glass material. There are no other objects visible on the table besides
+    the apple, glass of water, and plate.

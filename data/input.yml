@@ -1,0 +1,578 @@
+
+intent: greet
+  examples: |
+hey
+yo
+hello
+hi
+hello there
+good morning
+good evening
+moin
+hey there
+Hi there!
+Howdy!
+let's go
+hey dude
+goodmorning
+goodevening
+good afternoon
+greetings
+hiya
+Hey, how's it going?
+Nice to see you!
+Greetings!
+Salutations!
+What's up?
+Aloha!
+Hola!
+Bonjour!
+
+- intent: goodbye
+  examples: |
+cu
+good by
+cee you later
+catch you later
+good night
+bye
+goodbye
+have a nice day
+see you around
+bye bye
+see you later
+Peace out!
+Later!
+Ciao
+Have a great evening!
+
+- intent: affirm
+  examples: |
+ok
+of course
+okay
+yes
+y
+indeed
+of course
+that sounds good
+correct
+sure
+yep
+yeah
+i agree
+indeed
+Thats it
+exactly
+absolutely
+you are spot on
+thats right
+    
+
+- intent: done_it
+  examples: |
+did it
+i have done it 
+did that
+its done*
+its down
+egg is on
+It's already there
+I have placed the green glass on the yellow placemat.
+I put the blue glass on the red mat.
+white glass is now on the black placemat.'
+Just finished with placing red apple on white placemat.'
+done with the step
+did it
+i have done it 
+did that
+its done*
+its down
+egg is on
+It's already there
+I have placed the green glass on the yellow placemat.
+I put the blue glass on the red mat.
+white glass is now on the black placemat.
+Placed the gray vase on the white placemat.
+done. What else?
+There you go, I've placed the red bowl on the yellow placemat.
+The blue vase is now on the green placemat, all done.
+I've finished placing the pink pan on the white placemat, it looks great.
+The black plate is now on the orange placemat, it's ready to be served.
+Done! The purple cup is on the blue placemat.
+I've just placed the green apple on the brown placemat, looks good to me.
+I've finished placing the yellow spoon on the gray placemat, it matches nicely.
+The brown bread is on the beige placemat, we're all set for lunch.
+All done! The silver fork is on the red placemat, looks elegant.
+There you go, I've placed the glass on the placemat.
+Done! The plate is now on the placemat.
+I've just put the pan on the placemat.
+The spoon is now on the placemat, all set for dessert.
+I've finished placing the vase on the placemat, it looks lovely.
+The candle is now on the placemat, ready to be lit.
+Completed the task.
+The task is done.
+All done!
+Task Completed!
+done with the step
+Job complete boss
+we are good to go boss.
+
+- intent: deny
+  examples: |
+no
+n
+never
+nope
+I don't have that
+Item request - not avaliable on my table 
+I am unable to find the item
+Item missing!
+I don't see that item
+no can do
+I don't think so
+don't like that
+no way
+not really
+I cant see one
+no no
+Not now
+no working on it
+I'm not able to do that
+I cannot fulfill that request
+Negative, that's not possible
+Sorry, but I can't help you with that
+I'm sorry, but I cannot proceed with that.
+Sorry, that's not possible
+Sorry, I cannot agree to that
+I don't agree.
+I'm not sure
+Not right now.
+Sorry, that's something i cannot do.
+Invalid Request!
+Its already done! can't do that again
+    
+
+###############################
+
+- intent: ask_colour 
+  examples: |
+I have a yellow one and a red one
+do you mean the green cup
+I only have a black pan
+i only have a yellow one
+yup. looks like a white bread loaf
+Okay, ehm you mean the black pan?
+what colour is it?
+is it the blue mat
+I have a white one.
+a yellow vase?
+I have 2 red square placemats
+which blue dark or light
+I have a red apple and a gold apple
+Can you describe the color of the mug in more detail?
+Is the color of the mug more green or blue?
+What shade of color does the mug have?
+Is the color of the mug bright or muted?
+Is the color of the mug solid or does it have a pattern?
+Is there a particular hue or tint that the plate has?
+Would you say the color of the mug is closer to a warm or cool tone?
+How does the color of the plate compare to other objects nearby?
+Is there any texture or finish to the color of the vase?
+Could you give me a more specific name for the color of the bowl?
+Do you mean the lighter pruple one?
+The blue one or the red one
+The mug in which color?
+Could you describe the color of the plate for me?
+They both have the same color
+Is the vase white, black or some other color?
+Does the plate have a specific color?
+You didn't mention the colour
+Can you tell me the hue of this object?
+What is the shade of the pan
+I'm curious about the color of the apple. Can you tell me what it is?
+Could you give me some details about the object's color?
+Would you mind telling me the exact color of the bread?
+I'm trying to figure out which apple you mean. What color is it?
+The dark mat or the light one?
+I cannot seem to find it. What color is it?
+There are different shades of purple here. Which one?
+the pan is green
+I think the bowl is orange
+is the plate is purple?
+what colour is the mat? 
+what is the colour of the mat?
+plate color?
+color of  vase
+color of apple
+color of  mat
+Is mat red
+color of plate?
+is apple red?
+is mat blue
+
+- intent: ask_shape 
+  examples: |
+What is the shape of the mat?
+Is the placemat round or square?
+What is the contour of the mat?
+Does the mat have any irregular shapes  or edges?
+Is the mat circular, rectangular or oval?
+What is the perimeter of the mat?
+Is the mat symmetrical or asymmetrical?
+How does the mat compare to other mats in terms of shape?
+Can you tell me more about the shape of the placemat?
+What are the dimensions of the mat?
+What is the shape of the corners of the mat?
+Could you describe the shape?
+Are we talking about the square mat?
+The round mat?
+Could I ask what shape is the mat you're referring to?
+Do you mean the oval one?
+I can only see a round mat.
+Should I place the pan on the circular mat?
+Put the apple on the square mat, right?
+mat shape?
+
+
+- intent: ask_pos 
+  examples: |
+Where on the table is the mat located?
+Could you point out the position of the mat on the table?
+Is the mat placed in the center of the table?
+What is the specific spot where the mat is situated on the table?
+Can you tell me the exact location of the mat on the table?
+Is the mat placed near any particular objects on the table?
+What is the orientation of the mat?
+How far is the mat from the edge of the table?
+Is the mat positioned closer to one end of the table than the other?
+Can you give me an idea of where the mat is located on the table relative to other items?
+The placemat on the top right corner?
+Just to confirm, I'm placing the pan on the top right mat
+The bottom right mat, right?
+Are we talking about the mat on the bottom left corner?
+Where should I put the vase, the mat on the top left or bottom right?
+Where is this mat you're talking about?
+Is this mat on the right side of the previous one?
+Is it the mat on the right or left?
+do you mean the mat on the bottom right corner?
+The mat placed above the blue mat?
+Should I place the apple on the central mat?
+Which green mat should I place the pan on? The one in the bottom or the one on top?
+What's the relative position of the mat?
+What are the coordinates of this green mat?
+Should I place the pan on the mat closer to the edge of the table?
+I'm confused. Could you describe the location of the mat?
+What's the location of the target placemat?
+How far is the mat that we're talking of from the green mat?
+
+
+
+- intent: ask_state 
+  examples: |
+is the brown loaf sliced?
+The one without the sliced apple?
+both looks unsliced
+Actually, my apple is whole
+Should the apple be sliced?
+Are you sure apple is sliced?
+should the bread be whole?
+Is bread whole?
+Should I slice the bread
+Has the bread been cut into slices?
+is the brown loaf sliced?
+Do you want me to slice the apple
+The one without the sliced apple?
+Do you mean the unsliced apple?
+I have two breads. A sliced one and an unsliced one.
+both looks unsliced
+Actually, my apple is whole
+My bread is not sliced
+I have a sliced brown bread
+Should I cut the bread after I get one?
+There are two apples. One is whole the other one is sliced.
+How many, "role": "obj" apples should I cut.
+I can see an unsliced brown bread
+Nope. There is only a whole apple.
+Should I get a whole bread or a sliced bread
+Should I discard the sliced apple?
+Can you please confirm apple is sliced?
+Can you please confirm if I should slice the bread?
+Seems like the apple is unsliced
+I'm not sure but the bread looks like it's been cut
+
+
+- intent: ask_general 
+  examples: |
+which bread should i spwan?
+Where is the red placemat
+Which apple are we talking about?
+I am not sure what you mean by plate
+Vase? what is a vase?
+I don't know this object
+Does your pan has a handle?
+Wait! I don't what you are referring to.
+Which mat?
+Which placemat?
+Which placemat does it go on?
+Which apple should i use?
+Which mat should i use
+what mat was it it?
+what about the mat?
+what apple was i using?
+  
+- intent: ask_next_step 
+  examples: |
+i havent touched the egg or white plate though
+what about the bread
+I have a vase left
+What to do next
+What's next
+What is the next step in the task?
+Can you tell me what needs to be done next?
+Where should I go from here in the task?
+What action should I take next to complete the task?
+What comes after this step in the task?
+What is the follow-up step in the task?
+Which task should I start working on now?
+What do I need to do to move on to the next stage of the task?
+What should I prioritize as the next step in the task?
+How can I progress further in the task?
+I still have two items left
+What's the next step in this process?
+What do you think our next move should be?
+Can you give me some guidance on what to do next?
+Where do we go from here?
+Do you have any suggestions for what we should do next?
+What's the next course of action?
+What should be our next priority?
+What's the next item on our to-do list?
+What do you recommend we do next?
+What's the next step on the agenda?
+What's our next option?
+What's the next phase of this project?
+Can you guide me on what steps to take next?
+What's the next task we need to complete?
+What should we focus on next?
+What's the next action we need to take?
+Where do we need to go from here?
+What do we need to do next to move forward?
+What's the next priority on our list?
+What should our next move be to achieve our goal?
+There are some objects left on the table, should I discard them?
+ready
+let's start
+lets go
+    
+- intent: wait 
+  examples: |
+lol wait
+okay, working on it
+okay one sec
+cool, working on it
+one moment
+Okay, one moment
+okay, give me a sec
+okay one moment please
+gimme a minute
+looking at the rules. Gimme a min
+Yes, give me a second
+waiting ....
+one min
+correcting it now. Give me a min
+yup. Gimme a sec
+cool working on it
+one sec
+
+- intent: not_have_obj
+  examples: |
+i haven't got any bread
+I don't have a red plate I think
+okay I don't have an egg
+I don't have a plate
+I don't have a yellow sliced apple
+i am out of objects
+I don't have apples
+I'm sorry, but I don't have an apple at the moment.
+Unfortunately, I don't seem to have a plate
+I just realized that I don't have an apple.
+I'm sorry, I don't have any plates at the moment.
+Unfortunately, I don't have a vase right now.
+I don't have a spare pan, I'm afraid.
+I'm sorry, I'm all out of bread.
+Sorry, I don't have any apples left.
+Regrettably, I'm currently plate-less.
+I'm afraid I don't have a vase on hand.
+I'm out of pans at the moment, sorry.
+Unfortunately, there's no bread available right now.
+I'm fresh out of apples, sorry about that.
+Sorry, I'm currently without plates.
+I'm sorry to say I don't have a spare vase.
+Unfortunately, I don't have any pans available.
+I don't have any bread in stock, sorry.
+Sorry, I don't have any apples at the moment.
+I'm afraid I don't have any plates left.
+Unfortunately, I don't have a vase to offer.
+I don't have any spare pans, I'm sorry.
+I'm sorry, but I'm currently out of bread.
+Sorry, I've run out of apples.
+I don't have any white plates at the moment.
+I don't have a blue vase right now.
+I don't have a red pan.
+I'm all out of brown bread.
+I don't have any green apples left.
+I'm currently plate-less, and I don't have any white plates either.
+I don't have a yellow vase on hand.
+I'm out of black pans at the moment.
+There's no white bread available right now.
+I'm fresh out of green apples.
+
+
+- intent: rcpt_not_empty 
+  examples: |
+The orange "rcpt"  mat already has a glass on top
+i dont have an empty{"entity": "state_rcpt" round placemat
+mat already has stuff on top
+mat is not empty.
+The red mat is full
+The round placemat in red has some items on it, so it's not empty{"entity": "state_rcpt".
+I just noticed that the green square placemat is occupied{"entity": "state_rcpt".
+The green-colored round placemat has a few things on it.
+I can see that the red colored square placemat is in use, so it's not empty.
+The square,  placemat in green color has some items on it, which means it's not empty.
+The round,  placemat in red color is being used and is not empty.
+It's evident that the square,  placemat in green color is not empty, as there are things on it.
+I can see that the square,  placemat in green color is not empty.
+The round,  placemat in red color is being used and has items on it.
+    
+- intent: ask_numbers 
+  examples: |
+I have 2 round, yellow placemat
+i have two square,  blue, mats
+I have 2 green mats as well
+one dark and one light
+i have 2 of those.
+How many apples should I get?
+I have 3 apples on the table, one gold, one red, and one green
+I have three white plates and two blue vases.
+There are four,  red pans and five,  green apples.
+I own six,  black pans and three,  yellow vases.
+I have two,  white plates and four,  brown bread loaves.
+There are seven,  green apples and one,  blue vase in my kitchen.
+I own three,  red pans and six,  brown bread rolls.
+I have one,  yellow vase and eight,  green apples.
+There are two,  blue vases and three,  black pans.
+I own four,  white plates and five,  brown bread loaves.
+There are six,  green apples and one,  red pan on the table.
+I have one white mat and two green mats.
+There are two red mats and one black mat in my possession.
+I own two black mats and one yellow mat.
+I have one white mat and one yellow mat.
+
+- intent: bot_challenge
+  examples: |
+are you a bot?
+are you a human?
+am I talking to a bot?
+am I talking to a human?
+
+- lookup: colour
+  examples: |
+red
+blue
+orange
+green
+purple
+yellow
+iris
+black
+ocean blue
+sky blue
+gold
+silver
+gray
+brown
+khaki
+white
+color
+hue
+shade
+dark
+light
+bright
+matte
+Beige
+Maroon
+Navy
+Teal
+Turquoise
+Magenta
+Lavender
+Olive
+Forest Green
+Mustard
+Ruby
+Gold
+Silver
+Bronze
+Peach
+
+- lookup: pos
+  examples: |
+left
+centre
+top
+bottom
+above
+below
+position
+bottom right
+top right
+top left
+bottom left
+corner
+
+- lookup: count
+  examples: |
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+one
+two
+three
+four
+five
+six
+seven
+eight
+nine
+10
+    
+- lookup: obj
+  examples: |
+apple
+bread
+bowl
+cup
+egg
+pan
+plate
+vase
+
+- lookup: rcpt
+  examples: |
+mat
+placemat
+
+
+- lookup: shape
+  examples: |
+circle
+square

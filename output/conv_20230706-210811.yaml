@@ -1,0 +1,58 @@
+- Image: src/blip2_agent/images/1.jpg
+- GPT_Prompt: I have an image of a table top containing objects. Ask detailed questions
+    about the content in the image. Carefully ask me informative and short questions
+    to gather as much information as possible about the objects in the image. Answers
+    to these questions will be used to generate instructions to recreate the scene.Each
+    time ask one question only without giving an answer. Try to add variety to the
+    questions and keep the questions short.I'll reply back starting with "Ans:".Do
+    not hallucinate information. Only consider information provided by I.
+- GPT_SUB_PROMPT: "Generate Next Question. Minimize asking yes/no questions. \nQuestion: "
+- Blip_Prompt: Describe the image in detail. Do not skip information about any object.
+    Do not hallucinate objects in the image.
+- Summary_Prompt: Given above mentioned information, summarize the scene without losing
+    any detail. Do not hallucinate information. The summary can be upto 100 words
+    long.
+- CONVERSATION:
+  - 'BLIP_PROMPT_QUESTION: Describe the image in detail. Do not skip information about
+    any object. Do not hallucinate objects in the image.'
+  - 'BLIP_ANSWER: There is an apple, a glass of water, and a plate on the counter'
+  - 'GPT_QUESTION: What color is the apple?'
+  - 'BLIP_ANSWER: the apple is red'
+  - 'GPT_QUESTION: Is the apple whole or sliced?'
+  - 'BLIP_ANSWER: the apple is whole'
+  - 'GPT_QUESTION: What is the size of the glass of water?'
+  - 'BLIP_ANSWER: the glass of water is small'
+  - 'GPT_QUESTION: Is the glass of water half-full or completely full?'
+  - 'BLIP_ANSWER: half-full'
+  - 'GPT_QUESTION: What is the shape of the plate?'
+  - 'BLIP_ANSWER: the plate is square'
+  - 'GPT_QUESTION: Are there any other objects on the table top besides the apple,
+    glass of water, and plate?'
+  - 'BLIP_ANSWER: no'
+  - 'GPT_QUESTION: Is the glass made of glass or plastic?'
+  - 'BLIP_ANSWER: the glass is made of glass'
+  - 'GPT_QUESTION: Is there any liquid in the glass of water?'
+  - 'BLIP_ANSWER: yes'
+  - 'GPT_QUESTION: Is the plate empty or does it contain any food?'
+  - 'BLIP_ANSWER: the plate is empty'
+  - 'GPT_QUESTION: Is the apple placed on the plate or next to it?'
+  - 'BLIP_ANSWER: next to it'
+  - 'GPT_QUESTION: Is the table top made of wood or another material?'
+  - 'BLIP_ANSWER: next to it'
+  - 'GPT_QUESTION: Is the table top made of wood or another material?'
+  - 'BLIP_ANSWER: next to it'
+  - 'GPT_QUESTION: Is there any cutlery or utensils on the table top?'
+  - 'BLIP_ANSWER: next to it'
+  - 'GPT_QUESTION: Are there any napkins or coasters on the table top?'
+  - 'BLIP_ANSWER: next to it'
+  - 'GPT_QUESTION: Are there any decorations or flowers on the table top?'
+  - 'BLIP_ANSWER: next to it'
+  - 'GPT_QUESTION: Is the table top clean or does it have any stains or spills?'
+  - 'BLIP_ANSWER: next to it'
+  - 'GPT_QUESTION: Is the table top smooth or does it have any texture?'
+  - 'BLIP_ANSWER: next to it'
+  - 'GPT_QUESTION: Is the table top rectangular or circular in shape?'
+  - 'BLIP_ANSWER: next to it'
+  - 'GPT_QUESTION: Is the table top clean or does it have any stains or spills?'
+  - 'BLIP_ANSWER: next to it'
+- SUMMARY: Is the table top smooth or does it have any texture?

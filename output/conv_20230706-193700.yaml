@@ -1,0 +1,45 @@
+- Image: src/blip2_agent/images/1.jpg
+- GPT_Prompt: I have an image of a table top containing objects. Ask detailed questions
+    about the content in the image. Carefully ask me informative questions to gather
+    as much information as possible about the objects in the image. Answers to these
+    questions will be used to generate instructions to recreate the scene.Each time
+    ask one question only without giving an answer. Try to add variety to the questions.I'll
+    reply back starting with "Ans:".Do not hallucinate information. Only consider
+    information provided by I.
+- GPT_SUB_PROMPT: "Generate Next Question. Minimize asking yes/no questions. Do not\
+    \ add 'Question' at the start of responses. \nQuestion: "
+- Blip_Prompt: Describe the image in detail. Do not skip information about any object.
+    Do not hallucinate objects in the image. If you are not sure about something,
+    reply with "I am not sure."
+- Summary_Prompt: Given above mentioned information, summarize the scene without losing
+    any detail. Do not hallucinate information. The summary can be upto 200 words
+    long.
+- CONVERSATION:
+  - 'BLIP_PROMPT_QUESTION: Describe the image in detail. Do not skip information about
+    any object. Do not hallucinate objects in the image. If you are not sure about
+    something, reply with "I am not sure."'
+  - 'BLIP_ANSWER: an apple, a glass of water, a plate, and a cup of coffee on a counter'
+  - 'GPT_QUESTION: What color is the apple?'
+  - 'BLIP_ANSWER: I am not sure'
+  - 'GPT_QUESTION: Question: Is the apple red in color?'
+  - 'BLIP_ANSWER: I am not sure'
+  - 'GPT_QUESTION: Question: Is the glass of water half-filled or completely filled?'
+  - 'BLIP_ANSWER: I am not sure'
+  - 'GPT_QUESTION: Question: What is the shape of the plate?'
+  - 'BLIP_ANSWER: I am not sure'
+  - 'GPT_QUESTION: Question: Is the plate round in shape?'
+  - 'BLIP_ANSWER: I am not sure'
+  - 'GPT_QUESTION: Question: Question: What is the size of the cup of coffee?'
+  - 'BLIP_ANSWER: I am not sure'
+  - 'GPT_QUESTION: Question: Question: What is the material of the cup of coffee?'
+  - 'BLIP_ANSWER: I am not sure'
+  - 'GPT_QUESTION: Question: Question: Question: Is the cup of coffee made of ceramic?'
+  - 'BLIP_ANSWER: I am not sure'
+  - 'GPT_QUESTION: Question: Question: Question: Question: Question: Is the cup of
+    coffee made of glass?'
+  - 'BLIP_ANSWER: I am not sure'
+- SUMMARY: On the table top, there is an apple, a glass of water, a plate, and a cup
+    of coffee. The color of the apple is unknown. The glass of water is of unknown
+    quantity, whether it is half-filled or completely filled. The shape of the plate
+    is uncertain. The size of the cup of coffee is also unknown. The material of the
+    cup of coffee is uncertain, whether it is ceramic or glass.

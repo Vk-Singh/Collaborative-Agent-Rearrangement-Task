@@ -1,0 +1,269 @@
+text,label
+did it,SUCCESS
+i have done it,SUCCESS
+did that,SUCCESS
+its done*,SUCCESS
+its down,SUCCESS
+egg is on,SUCCESS
+It's already there,SUCCESS
+I have placed the green glass on the yellow placemat.,SUCCESS
+I put the blue glass on the red mat.,SUCCESS
+white glass is now on the black placemat.,SUCCESS
+Just finished with placing red apple on white placemat.,SUCCESS
+done with the step,SUCCESS
+did it,SUCCESS
+i have done it,SUCCESS
+did that,SUCCESS
+its done*,SUCCESS
+its down,SUCCESS
+egg is on,SUCCESS
+It's already there,SUCCESS
+I have placed the green glass on the yellow placemat.,SUCCESS
+I put the blue glass on the red mat.,SUCCESS
+white glass is now on the black placemat.,SUCCESS
+Placed the gray vase on the white placemat.,SUCCESS
+done. What else?,SUCCESS
+There you go,SUCCESS
+The blue vase is now on the green placemat,SUCCESS
+I've finished placing the pink pan on the white placemat,SUCCESS
+The black plate is now on the orange placemat,SUCCESS
+Done! The purple cup is on the blue placemat.,SUCCESS
+I've just placed the green apple on the brown placemat,SUCCESS
+I've finished placing the yellow spoon on the gray placemat,SUCCESS
+The brown bread is on the beige placemat,SUCCESS
+All done! The silver fork is on the red placemat,SUCCESS
+There you go,SUCCESS
+Done! The plate is now on the placemat.,SUCCESS
+I've just put the pan on the placemat.,SUCCESS
+The spoon is now on the placemat,SUCCESS
+I've finished placing the vase on the placemat,SUCCESS
+The candle is now on the placemat,SUCCESS
+Completed the task.,SUCCESS
+The task is done.,SUCCESS
+All done!,SUCCESS
+Task Completed!,SUCCESS
+done with the step,SUCCESS
+Job complete boss,SUCCESS
+we are good to go boss.,SUCCESS
+ all done.,SUCCESS
+ it looks great.,SUCCESS
+ it's ready to be served.,SUCCESS
+SUCCESS,SUCCESS
+ looks good to me.,SUCCESS
+ it matches nicely.,SUCCESS
+ we're all set for lunch.,SUCCESS
+ looks elegant.,SUCCESS
+ I've placed the glass on the placemat.,SUCCESS
+SUCCESS,SUCCESS
+SUCCESS,SUCCESS
+ all set for dessert.,SUCCESS
+ it looks lovely.,SUCCESS
+ ready to be lit.,SUCCESS
+which bread should i spwan?,BLIP
+Where is the red placemat,BLIP
+Which apple are we talking about?,BLIP
+I am not sure what you mean by plate,BLIP
+Vase? what is a vase?,BLIP
+I don't know this object,BLIP
+Does your pan has a handle?,BLIP
+Wait! I don't what you are referring to.,BLIP
+Which mat?,BLIP
+Which placemat?,BLIP
+Which placemat does it go on?,BLIP
+Which apple should i use?,BLIP
+Which mat should i use,BLIP
+what mat was it it?,BLIP
+what about the mat?,BLIP
+what apple was i using?,BLIP
+"I have 2 round, yellow placemat",BLIP
+"i have two square,  blue, mats",BLIP
+I have 2 green mats as well,BLIP
+one dark and one light,BLIP
+i have 2 of those.,BLIP
+How many apples should I get?,BLIP
+"I have 3 apples on the table, one gold, one red, and one green",BLIP
+I have three white plates and two blue vases.,BLIP
+"There are four,  red pans and five,  green apples.",BLIP
+"I own six,  black pans and three,  yellow vases.",BLIP
+"I have two,  white plates and four,  brown bread loaves.",BLIP
+"There are seven,  green apples and one,  blue vase in my kitchen.",BLIP
+"I own three,  red pans and six,  brown bread rolls.",BLIP
+"I have one,  yellow vase and eight,  green apples.",BLIP
+"There are two,  blue vases and three,  black pans.",BLIP
+"I own four,  white plates and five,  brown bread loaves.",BLIP
+"There are six,  green apples and one,  red pan on the table.",BLIP
+I have one white mat and two green mats.,BLIP
+There are two red mats and one black mat in my possession.,BLIP
+I own two black mats and one yellow mat.,BLIP
+I have one white mat and one yellow mat.,BLIP
+is the brown loaf sliced?,BLIP
+The one without the sliced apple?,BLIP
+both looks unsliced,BLIP
+"Actually, my apple is whole",BLIP
+Should the apple be sliced?,BLIP
+Are you sure apple is sliced?,BLIP
+should the bread be whole?,BLIP
+Is bread whole?,BLIP
+Should I slice the bread,BLIP
+Has the bread been cut into slices?,BLIP
+is the brown loaf sliced?,BLIP
+Do you want me to slice the apple,BLIP
+The one without the sliced apple?,BLIP
+Do you mean the unsliced apple?,BLIP
+I have two breads. A sliced one and an unsliced one.,BLIP
+both looks unsliced,BLIP
+"Actually, my apple is whole",BLIP
+My bread is not sliced,BLIP
+I have a sliced brown bread,BLIP
+Should I cut the bread after I get one?,BLIP
+There are two apples. One is whole the other one is sliced.,BLIP
+"How many, ""role"": ""obj"" apples should I cut.",BLIP
+I can see an unsliced brown bread,BLIP
+Nope. There is only a whole apple.,BLIP
+Should I get a whole bread or a sliced bread,BLIP
+Should I discard the sliced apple?,BLIP
+Can you please confirm apple is sliced?,BLIP
+Can you please confirm if I should slice the bread?,BLIP
+Seems like the apple is unsliced,BLIP
+I'm not sure but the bread looks like it's been cut,BLIP
+Where on the table is the mat located?,BLIP
+Could you point out the position of the mat on the table?,BLIP
+Is the mat placed in the center of the table?,BLIP
+What is the specific spot where the mat is situated on the table?,BLIP
+Can you tell me the exact location of the mat on the table?,BLIP
+Is the mat placed near any particular objects on the table?,BLIP
+What is the orientation of the mat?,BLIP
+How far is the mat from the edge of the table?,BLIP
+Is the mat positioned closer to one end of the table than the other?,BLIP
+Can you give me an idea of where the mat is located on the table relative to other items?,BLIP
+The placemat on the top right corner?,BLIP
+"Just to confirm, I'm placing the pan on the top right mat",BLIP
+"The bottom right mat, right?",BLIP
+Are we talking about the mat on the bottom left corner?,BLIP
+"Where should I put the vase, the mat on the top left or bottom right?",BLIP
+Where is this mat you're talking about?,BLIP
+Is this mat on the right side of the previous one?,BLIP
+Is it the mat on the right or left?,BLIP
+do you mean the mat on the bottom right corner?,BLIP
+The mat placed above the blue mat?,BLIP
+Should I place the apple on the central mat?,BLIP
+Which green mat should I place the pan on? The one in the bottom or the one on top?,BLIP
+What's the relative position of the mat?,BLIP
+What are the coordinates of this green mat?,BLIP
+Should I place the pan on the mat closer to the edge of the table?,BLIP
+I'm confused. Could you describe the location of the mat?,BLIP
+What's the location of the target placemat?,BLIP
+How far is the mat that we're talking of from the green mat?,BLIP
+What is the shape of the mat?,BLIP
+Is the placemat round or square?,BLIP
+What is the contour of the mat?,BLIP
+Does the mat have any irregular shapes  or edges?,BLIP
+"Is the mat circular, rectangular or oval?",BLIP
+What is the perimeter of the mat?,BLIP
+Is the mat symmetrical or asymmetrical?,BLIP
+How does the mat compare to other mats in terms of shape?,BLIP
+Can you tell me more about the shape of the placemat?,BLIP
+What are the dimensions of the mat?,BLIP
+What is the shape of the corners of the mat?,BLIP
+Could you describe the shape?,BLIP
+Are we talking about the square mat?,BLIP
+The round mat?,BLIP
+Could I ask what shape is the mat you're referring to?,BLIP
+Do you mean the oval one?,BLIP
+I can only see a round mat.,BLIP
+Should I place the pan on the circular mat?,BLIP
+"Put the apple on the square mat, right?",BLIP
+mat shape?,BLIP
+I have a yellow one and a red one,BLIP
+do you mean the green cup,BLIP
+I only have a black pan,BLIP
+i only have a yellow one,BLIP
+yup. looks like a white bread loaf,BLIP
+"Okay, ehm you mean the black pan?",BLIP
+what colour is it?,BLIP
+is it the blue mat,BLIP
+I have a white one.,BLIP
+a yellow vase?,BLIP
+I have 2 red square placemats,BLIP
+which blue dark or light,BLIP
+I have a red apple and a gold apple,BLIP
+Can you describe the color of the mug in more detail?,BLIP
+Is the color of the mug more green or blue?,BLIP
+What shade of color does the mug have?,BLIP
+Is the color of the mug bright or muted?,BLIP
+Is the color of the mug solid or does it have a pattern?,BLIP
+Is there a particular hue or tint that the plate has?,BLIP
+Would you say the color of the mug is closer to a warm or cool tone?,BLIP
+How does the color of the plate compare to other objects nearby?,BLIP
+Is there any texture or finish to the color of the vase?,BLIP
+Could you give me a more specific name for the color of the bowl?,BLIP
+Do you mean the lighter pruple one?,BLIP
+The blue one or the red one,BLIP
+The mug in which color?,BLIP
+Could you describe the color of the plate for me?,BLIP
+They both have the same color,BLIP
+"Is the vase white, black or some other color?",BLIP
+Does the plate have a specific color?,BLIP
+You didn't mention the colour,BLIP
+Can you tell me the hue of this object?,BLIP
+What is the shade of the pan,BLIP
+I'm curious about the color of the apple. Can you tell me what it is?,BLIP
+Could you give me some details about the object's color?,BLIP
+Would you mind telling me the exact color of the bread?,BLIP
+I'm trying to figure out which apple you mean. What color is it?,BLIP
+The dark mat or the light one?,BLIP
+I cannot seem to find it. What color is it?,BLIP
+There are different shades of purple here. Which one?,BLIP
+the pan is green,BLIP
+I think the bowl is orange,BLIP
+is the plate is purple?,BLIP
+what colour is the mat? ,BLIP
+what is the colour of the mat?,BLIP
+plate color?,BLIP
+color of  vase,BLIP
+color of apple,BLIP
+color of  mat,BLIP
+Is mat red,BLIP
+color of plate?,BLIP
+is apple red?,BLIP
+is mat blue,BLIP
+i havent touched the egg or white plate though,NEXT_STEP
+what about the bread,NEXT_STEP
+I have a vase left,NEXT_STEP
+What to do next,NEXT_STEP
+What's next,NEXT_STEP
+What is the next step in the task?,NEXT_STEP
+Can you tell me what needs to be done next?,NEXT_STEP
+Where should I go from here in the task?,NEXT_STEP
+What action should I take next to complete the task?,NEXT_STEP
+What comes after this step in the task?,NEXT_STEP
+What is the follow-up step in the task?,NEXT_STEP
+Which task should I start working on now?,NEXT_STEP
+What do I need to do to move on to the next stage of the task?,NEXT_STEP
+What should I prioritize as the next step in the task?,NEXT_STEP
+How can I progress further in the task?,NEXT_STEP
+I still have two items left,NEXT_STEP
+What's the next step in this process?,NEXT_STEP
+What do you think our next move should be?,NEXT_STEP
+Can you give me some guidance on what to do next?,NEXT_STEP
+Where do we go from here?,NEXT_STEP
+Do you have any suggestions for what we should do next?,NEXT_STEP
+What's the next course of action?,NEXT_STEP
+What should be our next priority?,NEXT_STEP
+What's the next item on our to-do list?,NEXT_STEP
+What do you recommend we do next?,NEXT_STEP
+What's the next step on the agenda?,NEXT_STEP
+What's our next option?,NEXT_STEP
+What's the next phase of this project?,NEXT_STEP
+Can you guide me on what steps to take next?,NEXT_STEP
+What's the next task we need to complete?,NEXT_STEP
+What should we focus on next?,NEXT_STEP
+What's the next action we need to take?,NEXT_STEP
+Where do we need to go from here?,NEXT_STEP
+What do we need to do next to move forward?,NEXT_STEP
+What's the next priority on our list?,NEXT_STEP
+What should our next move be to achieve our goal?,NEXT_STEP
+"There are some objects left on the table, should I discard them?",NEXT_STEP
+ready,NEXT_STEP
+let's start,NEXT_STEP
+lets go,NEXT_STEP

@@ -1,0 +1,31 @@
+- Image: src/blip2_agent/images/1.jpg
+- GPT_Prompt: I have an image of a table top containing objects. Ask detailed questions
+    about the content in the image. Carefully ask me informative questions to gather
+    as much information as possible about the objects in the image. Each time ask
+    one question only without giving an answer. Try to add variety to the questions.I'll
+    reply back starting with "Ans:".Do not hallucinate information. Only consider
+    information provided by I.
+- Blip_Prompt: Describe the image in detail. Do not skip information about any object.
+    Do not hallucinate objects in the image.
+- CONVERSATION:
+  - 'BLIP_PROMPT_QUESTION: Describe the image in detail. Do not skip information about
+    any object. Do not hallucinate objects in the image.'
+  - 'BLIP_ANSWER: There is an apple, a glass of water, and a plate on the counter'
+  - 'GPT_QUESTION: What color is the apple on the counter?'
+  - 'BLIP_ANSWER: the apple on the counter is red'
+  - 'GPT_QUESTION: What is the shape of the glass of water on the counter?'
+  - 'BLIP_ANSWER: the glass of water on the counter is round'
+  - 'GPT_QUESTION: Is there anything else on the plate besides the apple?'
+  - 'BLIP_ANSWER: yes, there is a glass of water on the plate'
+  - 'GPT_QUESTION: What is the size of the plate on the counter?'
+  - 'BLIP_ANSWER: the plate on the counter is small'
+  - 'GPT_QUESTION: Is there any cutlery present on the table top?'
+  - 'BLIP_ANSWER: no, there is no cutlery present on the table top'
+  - 'GPT_QUESTION: What is the material of the plate on the counter?'
+  - 'BLIP_ANSWER: the plate on the counter is white'
+  - 'GPT_QUESTION: What is the shape of the plate on the counter?'
+  - 'BLIP_ANSWER: the plate on the counter is square'
+  - 'GPT_QUESTION: What is the position of the glass of water on the plate?'
+  - 'BLIP_ANSWER: the glass of water is on top of the apple on the plate'
+  - 'GPT_QUESTION: Is the glass of water full or partially filled?'
+  - 'BLIP_ANSWER: yes, the glass of water is partially filled'

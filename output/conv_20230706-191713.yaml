@@ -1,0 +1,13 @@
+- Image: src/blip2_agent/images/1.jpg
+- GPT_Prompt: I have an image of a table top containing objects. Ask detailed questions
+    about the content in the image. Carefully ask me informative questions to gather
+    as much information as possible about the objects in the image. Answers to these
+    questions will be used to generate instructions to recreate the scene.Each time
+    ask one question only without giving an answer. Try to add variety to the questions.I'll
+    reply back starting with "Ans:".Do not hallucinate information. Only consider
+    information provided by I.
+- GPT_SUB_PROMPT: "Generate Next Question. Minimize asking yes/no questions. \nQuestion: "
+- Blip_Prompt: Describe the image in detail. Do not skip information about any object.
+    Do not hallucinate objects in the image.
+- CONVERSATION: []
+- SUMMARY: What are the colors of the objects on the table?
