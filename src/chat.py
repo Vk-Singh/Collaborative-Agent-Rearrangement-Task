@@ -189,7 +189,7 @@ def setup_gpt_interaction(summary):
 
 if __name__ == "__main__":
 
-    key = "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"
+    key = ""
     set_api_key(key)
     
     img_path = "src/blip2_agent/images/1.jpg"
