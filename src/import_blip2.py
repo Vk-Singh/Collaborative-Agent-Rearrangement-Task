@@ -17,6 +17,33 @@ BLIP2DICT = {
 class Blip2():
     def __init__(self, model, device_id=0, bit8=True):
         # load BLIP-2 to a single gpu
+        """
+        Initialize a Blip2 model.
+
+        Parameters
+        ----------
+        model : str
+            The name of the model.
+        device_id : int, optional
+            The ID of the GPU to use. Defaults to 0.
+        bit8 : bool, optional
+            Whether to load the model in 8-bit mode. Defaults to True.
+
+        Attributes
+        ----------
+        tag : str
+            The name of the model.
+        bit8 : bool
+            Whether the model is loaded in 8-bit mode.
+        device_gpu : str
+            The device name for the GPU.
+        device : str
+            The device name for the CPU.
+        blip2_processor : Blip2Processor
+            The preprocessor for the Blip2 model.
+        blip2 : Blip2ForConditionalGeneration
+            The Blip2 model itself.
+        """
         self.tag = model
         self.bit8 = bit8
         self.device_gpu = 'cuda:{}'.format(device_id)

@@ -16,14 +16,27 @@ QUES_LIST = []
 ANS_LIST = []
 
 def call_gpt(gpt_msg, max_tokens=1000, model = "gpt-3.5-turbo-0613"):
+    """
+    Calls the GPT model to generate text based on the given prompt.
+
+    Parameters
+    ----------
+    gpt_msg : list
+        A list of dictionaries containing the prompt to send to the GPT model.
+    max_tokens : int, optional
+        The maximum number of tokens to generate. Defaults to 1000.
+    model : str, optional
+        The name of the GPT model to use. Defaults to "gpt-3.5-turbo-0613".
+
+    Returns
+    -------
+    tuple
+        A tuple containing the generated text and the number of tokens used.
+    """
     response = openai.ChatCompletion.create(model=model, messages=gpt_msg, temperature=0.65, max_tokens=max_tokens)
     reply = response['choices'][0]['message']['content']
     tokens = response['usage']['total_tokens']
     return reply, tokens
-
-
-def load_pickle(pickle_file):
-    pass
 
 
 
@@ -41,8 +54,6 @@ if __name__ == "__main__":
     prompt.append({"role": "system", "content": SUMMARY_PROMPT})
 
     reply, tokens = call_gpt(prompt)
-    print(f'SUMMARY : {reply}')
-    print(f'TOKENS: {tokens}')
 
     prompt2 = []
     prompt2.append({'role': 'user', 'content': reply})

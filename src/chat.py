@@ -100,43 +100,120 @@ SUMMARY = None
 TEST_REPLY= None
 
 def filter_gpt_response(resp):
+    """
+    Filter the response from GPT and return it unchanged.
+
+    Parameters
+    ----------
+    resp : str
+        The response from GPT to be filtered.
+
+    Returns
+    -------
+    str
+        The unchanged response.
+    """
+
     print(f'resp | {resp}')
     return resp
 
 
 def get_gpt_response(prompt, filter_func=filter_gpt_response, max_tokens=200, model="gpt-3.5-turbo", temp=0.6):
-        forward_flag = False
-        retry = 0
-        while not forward_flag and retry < 5:
-            try:
-                response = openai.ChatCompletion.create(model=model, messages=prompt, temperature=temp, max_tokens=max_tokens)
-                reply = response['choices'][0]['message']['content']
-                reply = filter_func(reply)
-                tokens = response['usage']['total_tokens']
-                forward_flag = True
-                return reply, tokens
+    """
+    Calls the GPT model to generate text based on the given prompt.
+
+    Parameters
+    ----------
+    prompt : list
+        A list of dictionaries containing the prompt to send to the GPT model.
+    filter_func : function
+        A function to filter the response from GPT. Defaults to `filter_gpt_response`.
+    max_tokens : int, optional
+        The maximum number of tokens to generate. Defaults to 200.
+    model : str, optional
+        The name of the GPT model to use. Defaults to "gpt-3.5-turbo".
+    temp : float, optional
+        The temperature parameter to use when generating text. Defaults to 0.6.
+
+    Returns
+    -------
+    tuple
+        A tuple containing the generated text and the number of tokens used.
+    """
+    forward_flag = False
+    retry = 0
+    while not forward_flag and retry < 5:
+        try:
+            response = openai.ChatCompletion.create(model=model, messages=prompt, temperature=temp, max_tokens=max_tokens)
+            reply = response['choices'][0]['message']['content']
+            reply = filter_func(reply)
+            tokens = response['usage']['total_tokens']
+            forward_flag = True
+            return reply, tokens
                 
-            except Exception as e:
-                print('retrying to call gpt...')
-                time.sleep(3)
-                retry+=1
-        return None
+        except Exception as e:
+            print('retrying to call gpt...')
+            time.sleep(3)
+            retry+=1
+    return None
 
 
 def gen_blip2_prompt(input):
+    """
+    Generate a prompt for BLIP2 by prepending "Question: " and appending " Ans:" to the input string.
+
+    Parameters
+    ----------
+    input : str
+        The input string to be formatted.
+
+    Returns
+    -------
+    str
+        The formatted prompt string.
+    """
     return f' Question: "{input} Ans:' 
 
 def ask_blip2(question, image):
+    """
+    Ask a question to the BLIP2 model for the given image.
+
+    Parameters
+    ----------
+    question : str
+        The question to ask the model.
+    image : PIL.Image
+        The image to ask the question about.
+
+    Returns
+    -------
+    str
+        The answer to the question.
+    """
     resp = manager.vis_model.evaluate_QA(question, image)
     return resp
 
 
 def generate_gpt_prompt(input, type="chat"):
+    """
+    Generate a prompt for the GPT model.
+
+    Parameters
+    ----------
+    input : str
+        The user input to be sent to the GPT model.
+    type : str
+        The type of the prompt. Defaults to "chat".
+
+    Returns
+    -------
+    list
+        A list of dictionaries containing the formatted prompt to be sent to the GPT model.
+    """
+    
     prompt = [{"role": "system", "content": INSTRUCTION_GENERATION_PREPROMPT}]
     prompt.append({"role": "system", "content": SUMMARY})
 
-    #print(f'LLM_HIST = {LLM_HISTORY}')
-    #print(f'USER HIST = {USER_HISTORY}')
     for q, a in zip(LLM_HISTORY, USER_HISTORY):
         prompt.append({'role': 'user', 'content': a})
         prompt.append({'role': 'assistant', 'content': q})
@@ -146,16 +223,36 @@ def generate_gpt_prompt(input, type="chat"):
 
 
 def my_chatbot(input, history):
-    #if not LLM_HISTORY:
-     #   setup_gpt_interaction(SUMMARY)
-    #print(f"manager {manager.format_out}")
+  
+
+    """
+    Simulates a chatbot interaction by processing user input and generating a response.
+
+    This function generates a prompt for the GPT model using the user's input and
+    retrieves a response from the model. It also manages the interaction history,
+    processes the response, and handles queries that require calling the BLIP2 model.
+
+    Parameters
+    ----------
+    input : str
+        The user input to be processed by the chatbot.
+    history : list
+        The history of interactions, where each interaction is a tuple of
+        (user_input, bot_response).
+
+    Returns
+    -------
+    tuple
+        A tuple containing the updated interaction history.
+    """
     history = history or []
     my_history = list(sum(history, ()))
+
     my_history.append(input)
     #my_input = ' '.join(my_history)
 
     prompt = generate_gpt_prompt(input)
-    print(f'prompt : {prompt}')
+    
     output, tokens = get_gpt_response(prompt)
     #print (f"OUTPUT : {output}")
     output = filter_gpt_response(output)
@@ -164,10 +261,9 @@ def my_chatbot(input, history):
         blip_output = ask_blip2(blip_prompt,manager.image)
         out = generate_gpt_prompt(blip_output, 'blip')
         print(f'Out_Ques |  {out}')
-    print(f'Tokens: {tokens}')
+   
     USER_HISTORY.append(input)
-    # Filter GPT Response
-    # Call BLIP2 if needed
+
 
     LLM_HISTORY.append(output)
     history.append((input, output))
@@ -176,12 +272,23 @@ def my_chatbot(input, history):
 
 
 def setup_gpt_interaction(summary):
+    """
+    Set up the initial interaction with the GPT model using the given summary.
+    
+    Parameters
+    ----------
+    summary : str
+        The summary of the table-top scene.
+    
+    Returns
+    -------
+    None
+    """
     prompt = generate_gpt_prompt(summary)
     USER_HISTORY.append(summary)
     #print (f'PROMPT INIT : {prompt}')
     reply, tokens = get_gpt_response(prompt, filter_gpt_response)
-    print(f'reply: {reply}')
-    print(f'tokens: {tokens}')
+
     LLM_HISTORY.append(reply)
     TEST_REPLY = reply
 
